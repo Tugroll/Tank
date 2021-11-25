@@ -1,6 +1,9 @@
+using UnityEngine;
+using TopDownShooter.Shooting;
 using System.Collections;
 using System.Collections.Generic;
-using UnityEngine;
+
+using TopDownShooter.PlayerInput;
 
 namespace TopDownShooter.Camera
 {
@@ -10,10 +13,24 @@ namespace TopDownShooter.Camera
         [SerializeField] private Transform _target;
         [SerializeField] private Transform _cameraTransform;
 
+        public ShootingManager _Shooting;
+
+
+
+
+        private void FixedUpdate()
+        {
+            _Shooting.Shoot(transform.position, transform.forward);
+        }
+
         private void Update()
         {
             CamRot();
             CamPos();
+            
+            
+            
+
         }
 
         private void CamRot()

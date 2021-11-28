@@ -2,18 +2,22 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Stat : MonoBehaviour
+namespace TopDownShooter
 {
-    // Start is called before the first frame update
-    private float health = 100;
-
-    public void damage(float dmg)
+    public class Stat : MonoBehaviour
     {
-        health -= dmg;
-        if (health <= 0)
+        // Start is called before the first frame update
+        private float health = 100;
+
+        public void damage(float dmg)
         {
-            Debug.Log("Hasar var");
-            
+            health -= dmg;
+            if (health <= 0)
+            {
+                Debug.Log("Hasar var");
+                
+
+            }
         }
     }
 }

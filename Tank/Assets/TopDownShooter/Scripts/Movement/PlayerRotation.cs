@@ -3,14 +3,18 @@ using System.Collections.Generic;
 using TopDownShooter.PlayerInput;
 using UnityEngine;
 
-public class PlayerRotation : MonoBehaviour
+namespace TopDownShooter.PlayerControls
 {
-    [SerializeField] private InputData _inputdata;
-    [SerializeField] private Transform _tower;
-
-    private void Update()
+    public class PlayerRotation : MonoBehaviour
     {
-        _tower.Rotate(0f, _inputdata.Horizontal, 0f, Space.Self);
-    }
+        [SerializeField] private InputData _inputdata;
+        [SerializeField] private Transform _tower;
+        [SerializeField] private RotationSettings _rotationsettings;
 
+        private void Update()
+        {
+            _tower.Rotate(0f, _inputdata.Horizontal * _rotationsettings.towerRotSpeed, 0f, Space.Self);
+        }
+
+    }
 }

@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Verticalspeed: 0.1
   Horizontalspeed: 0.1
-  JumpSpeed: 0.05
+  JumpSpeed: 0

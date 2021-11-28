@@ -18,25 +18,27 @@ namespace TopDownShooter.Camera
 
 
 
-       
+
 
         private void Update()
         {
-            CamRot();
-            CamPos();
-            _shooting.Fire();
+            //    CamPos();
+            //    //CamRot();
+
+            //    _shooting.Fire();
 
 
 
-        }
+            //}
 
-        private void CamRot()
-        {
-            _cameraTransform.rotation = Quaternion.Lerp(_cameraTransform.rotation, Quaternion.LookRotation(_target.position - _cameraTransform.position), Time.deltaTime * _camera.RotationLerpSpeed);
-        }
-        private void CamPos()
-        {
-            _cameraTransform.position = Vector3.Lerp(_cameraTransform.position, _target.position + _camera.Positionoffset, _camera.PositionLerpSpeed * Time.deltaTime);
+            //private void CamRot()
+            //{
+            //    _cameraTransform.rotation = Quaternion.Lerp(_cameraTransform.rotation, Quaternion.LookRotation(_target.forward), Time.deltaTime * _camera.RotationLerpSpeed);
+            //}
+            //private void CamPos()
+            //{
+            //    _cameraTransform.position = Vector3.Lerp(_cameraTransform.position, _target.position + _camera.Positionoffset, _camera.PositionLerpSpeed * Time.deltaTime);
+            //
         }
     }
 }

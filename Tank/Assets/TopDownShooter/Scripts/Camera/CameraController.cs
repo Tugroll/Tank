@@ -1,5 +1,5 @@
 using UnityEngine;
-using TopDownShooter.Shoot;
+
 using System.Collections;
 using System.Collections.Generic;
 
@@ -13,7 +13,7 @@ namespace TopDownShooter.Camera
         [SerializeField] private Transform _target;
         [SerializeField] private Transform _cameraTransform;
 
-        public shManagment _shooting;
+        
 
 
 

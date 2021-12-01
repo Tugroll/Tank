@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: PlayerRotationSettings
   m_EditorClassIdentifier: 
   Vertical: 0
-  Horizontal: 0
+  Horizontal: 0.015097184
   axisactive: 0
   axisnamehorizontal: Horizontal
   axisnamevertical: Vertical
@@ -23,4 +23,4 @@ MonoBehaviour:
   _KeybaseVerticaltalactive: 0
   PositiveVerticalKeycode: 0
   NegativeVerticalKeycode: 0
-  _increaseamount: 0.1
+  _increaseamount: 0.0001

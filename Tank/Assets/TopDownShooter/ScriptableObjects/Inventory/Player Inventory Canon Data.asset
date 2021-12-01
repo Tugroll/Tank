@@ -12,4 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ef50b8e272618a45bec47cabfc6a90e, type: 3}
   m_Name: Player Inventory Canon Data
   m_EditorClassIdentifier: 
-  _itemID: 
+  _itemID: Canon_default
+  "_\u0131nventoryItemDataType": 0
+  _prefab: {fileID: 152669162886904521, guid: 7f338c9ef0efb6442b7d7f7b202d542d, type: 3}
